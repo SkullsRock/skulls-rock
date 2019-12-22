@@ -1,0 +1,10 @@
+name: Ash's Greetings!
+
+on: [pull_request, issues]
+
+  greeting: 'Welcome To SkullsRock/Ash's Patreon Server!'
+    runs-on: ubuntu-lates
+    - uses: actions/first-interaction@v1
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        issue-message: 'Sorry, I'll Fix It Right Away'
